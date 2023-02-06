@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!----fontawesome incon -->
+    <script src="https://kit.fontawesome.com/b356ad9dc8.js" crossorigin="anonymous"></script>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div id="top_section">
+    
+        <div class="container">
+            <div id="menu_toggle"></div>
+                 <div id="sidebar">
+                <img src="img/profile photo.jpg">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">What I do</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+    
+            </div>
+            <div class="contant">
+                <div class="home_section">
+                    
+                        <div class="images"> 
+                            <img src="img/profile photo.jpg" alt="personal photo">
+                        </div>
+                   
+                  
+                   
+                        <div class="only-photo-text">
+                         
+                            <h2>I am a &nbsp; <span class="auto-type"></span></h2>
+                            <a href="#"> hire me</a>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   
+<div id="knowmemore">
+        <h1>Know Me More</h1>
+        <div class="container">
+            <div class="alaminrows">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore tempore modi ea, aspernatur, ad officiis expedita pariatur beatae repellendus quas deleniti culpa nobis quod ipsum illo! Cumque consequatur totam, magni corrupti quisquam voluptatem voluptatum commodi libero eos sint dignissimos reprehenderit quis dolore unde nihil quas corporis ratione amet perferendis alias.</p>
+            </div>
+            <div class="alaminrows">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore tempore modi ea, aspernatur, ad officiis expedita pariatur beatae repellendus quas deleniti culpa nobis quod ipsum illo! Cumque consequatur totam, magni corrupti quisquam voluptatem voluptatum commodi libero eos sint dignissimos reprehenderit quis dolore unde nihil quas corporis ratione amet perferendis alias.</p>
+            </div>
+            <div class="alaminrows">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore tempore modi ea, aspernatur, ad officiis expedita pariatur beatae repellendus quas deleniti culpa nobis quod ipsum illo! Cumque consequatur totam, magni corrupti quisquam voluptatem voluptatum commodi libero eos sint dignissimos reprehenderit quis dolore unde nihil quas corporis ratione amet perferendis alias.</p>
+            </div>
+            <div class="alaminrows">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore tempore modi ea, aspernatur, ad officiis expedita pariatur beatae repellendus quas deleniti culpa nobis quod ipsum illo! Cumque consequatur totam, magni corrupti quisquam voluptatem voluptatum commodi libero eos sint dignissimos reprehenderit quis dolore unde nihil quas corporis ratione amet perferendis alias.</p>
+            </div>
+        </div>
+    </div>
+<div id="column3">
+    <div class="container">
+        <div class="test">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, corporis? Dignissimos nemo quia ratione architecto ipsa rem eveniet illum voluptates nesciunt tempore? Et laboriosam, neque, saepe temporibus a recusandae laborum vero ipsa cum provident nesciunt explicabo. Cupiditate necessitatibus iure quia aut libero, obcaecati, ab repellendus, sed suscipit mollitia eveniet voluptatum?</p>
+        </div>
+        <div class="test">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, corporis? Dignissimos nemo quia ratione architecto ipsa rem eveniet illum voluptates nesciunt tempore? Et laboriosam, neque, saepe temporibus a recusandae laborum vero ipsa cum provident nesciunt explicabo. Cupiditate necessitatibus iure quia aut libero, obcaecati, ab repellendus, sed suscipit mollitia eveniet voluptatum?</p>
+        </div>
+        <div class="test">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, corporis? Dignissimos nemo quia ratione architecto ipsa rem eveniet illum voluptates nesciunt tempore? Et laboriosam, neque, saepe temporibus a recusandae laborum vero ipsa cum provident nesciunt explicabo. Cupiditate necessitatibus iure quia aut libero, obcaecati, ab repellendus, sed suscipit mollitia eveniet voluptatum?</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+<!--------- taggle Menu-->
+<script type="text/javascript">
+    const toggle =document.getElementById('menu_toggle');
+    const sidebar = document.getElementById('sidebar')
+
+    document.onclick = function(e){
+        if(e.target.id !=='sidebar' && e.target.id !=='menu_toggle' ){
+            menu_toggle.classList.remove('active');
+            sidebar.classList.remove('active')
+        }
+    }
+
+
+       toggle.onclick = function(){
+        menu_toggle.classList.toggle('active');
+        sidebar.classList.toggle('active')
+    }
+  
+   
+    </script> 
+
+
+<!----Auto type-->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed(".auto-type",{
+      strings:["Web Devoloper", "Web designer", "Graphic Designer","ul/ux Designer"],
+      typeSpeed:150,
+      backSpeed:150,
+      loop:true })
+  </script>

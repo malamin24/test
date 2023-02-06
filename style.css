@@ -1,0 +1,261 @@
+/*----- common tontainer Css----------*/
+
+.container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto, 1fr);
+  }
+  h1, h2, h3{
+    font-size: 'raleway';
+  }
+/*=================== sidebar menu=====================*/
+#sidebar{
+    grid-column: 1 /span 3;
+    position: absolute;
+     background: #dddddd;
+     width: 300px;
+     height: 100vh;
+     position: fixed;
+   }
+ #sidebar ul{
+     margin: 0;
+     padding: 10px 0px;
+     list-style: none;
+ 
+ }
+ #sidebar ul li {
+     padding: 5px 5px;
+     
+ }
+ #sidebar ul li:hover{
+     background: #D6A848;
+     color: white;
+  }
+ #sidebar ul li a:hover{
+      color: white;
+ 
+ }
+ #sidebar ul li a{
+     position: relative;
+     text-decoration: none;
+     padding: 10px;
+     color: rgb(0, 0, 0);
+     font-size: 20px;
+     font-family: 'raleway';
+  }
+
+#sidebar img{
+    position: relative;
+    width: 100%;
+   
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/*============= typing content ======================*/
+.contant {
+    grid-column: auto / span 12;
+    align-items: center;
+    margin: 0 10px;
+    grid-row: auto;
+    margin-left: 310px;
+    background:url(img/background.jpg);
+    background-size: cover;
+    padding: 0;
+}
+
+
+.home_section{
+    display: flex;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+}
+.only-photo-text{
+   position:relative;
+    padding:0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+}
+.only-photo-text a{
+    text-decoration: none;
+    color:black;
+    border:2px solid white;
+    
+    background: #D6A848;
+   border-radius: 5px;
+    cursor:pointer;
+    padding:10px;
+    text-transform: uppercase;
+    margin-top: 02%;
+
+}
+.only-photo-text a:hover{ 
+    background:#D6A848;
+    font-weight: bold;
+    border:hidden;
+    }
+
+.only-photo-text h2{ 
+        color: #D6A848;
+        font-size: 40px;
+        text-shadow: 2px 2px 2px black;
+        }
+    
+.auto-type{
+        color:white;
+       }
+.images{
+   
+    padding:10px;
+    margin: 20px;
+    text-align: center;
+    text-justify: center;
+    
+    }
+    
+    .images img{
+        object-fit: cover;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        padding: 5px;
+       margin-top: 50px;
+        border-radius: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+        box-shadow:#D6A848;
+        animation: mymove 9s infinite;
+        
+       
+    }
+    @keyframes mymove {
+        50% {translate: 0px -50px;}
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.alaminrows{
+    grid-column: auto/ span 3;
+    background: #ddd;
+    margin: 10px;
+    padding: 10px;
+    grid-row: auto;
+}
+.knowmemore {
+    grid-column: 1 / span 12;
+   
+    grid-row: auto;
+}
+#knowmemore h1{
+    text-align: center;
+}
+
+.test {
+    grid-column: auto/ span 3;
+    grid-row: auto;
+    background: yellow;
+    margin: 10px;
+    padding: 10px;
+
+}
+#knowmemore, #column3{
+    margin-left: 310px;
+}
+
+
+
+
+
+#menu_toggle {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height:60px;
+    background: #D6A848;
+    cursor: pointer;
+    z-index: 4;
+    opacity: 0;
+
+}
+
+#menu_toggle::before {
+content: '\f0c9';
+ font-family: 'fontAwesome';
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ line-height: 60px;
+ text-align: center;
+ font-size: 24px;
+color: white;
+
+}
+#menu_toggle.active:before {
+    content: '\f00d';
+
+    }
+    @media (max-width: 720px) {
+        .sidebar, .contant{grid-column: auto / span 6; }
+        #knowmemore, #column3, .contant{ margin-left: 0;}
+       
+        #sidebar{
+            position: fixed;
+           background: #ffffff93;
+            left: -300%;
+            z-index: 3;
+            width: 300px;
+            text-align: left;
+            top:0;
+            transition: 1s;
+            
+            
+        }
+        
+        #sidebar.active{
+            left:0px;
+            opacity: 1;
+        }
+        #sidebar ul li{
+            padding: 10px 5px;
+            margin: 10px;
+        
+        }
+        #sidebar ul li a{
+            color: black;
+            font-size: 20px;
+            
+        }
+
+    
+        #menu_toggle{
+            opacity: 1;
+            position: fixed;
+        }
+
+
+.home_section{
+    display: grid;
+}
+
+
+        }
+    
